@@ -1,0 +1,105 @@
+body {
+    /* Box model */
+    margin: 0px;
+    
+    /* Background */
+    background-color: #141418;
+    
+    /* Typeography */
+    font-size: 18px;
+    color: #F4F4F5;
+}
+
+.header {
+    /* Box model */
+    margin-left: 20%;
+	margin-right: 20%;
+	padding: 2px;
+	
+	/* Border */
+    border-radius: 0px 50px 0px 50px;
+
+    /* Background */
+	background-color: #1E1E24;
+	
+	/* Typeography */
+	font-family: consolas;
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	
+	/* Effects */
+	text-shadow: 2px 2px 5px #FF8800;
+}
+
+h2 {
+    /* Box model */
+    margin-left: 1.5%;
+    
+    /* Typeography */
+    font-size: 30px;
+}
+
+h3 {
+    /* Box model */
+    margin-left: ;
+}
+
+footer {
+    /* Box model */
+    width: 100%;
+    height: 100px;
+    
+    /* Background */
+    background-color: #1E1E24;
+}
+
+div {
+    /* Box model*/
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    
+    /* Background */
+    background-color: #1E1E24
+}
+
+.column {
+    /* Box model */
+    float: left;
+    width: 47%;
+}
+
+.skills-column {
+    /* Box model */
+    float: left;
+    width: 30%;
+}
+
+.row:after {
+    /* Box model */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* [Link Styles] */
+
+a:link {
+    /* Typeography*/
+    color: #FF8800;
+}
+
+a:visited {
+    /* Typeography*/
+    color: #00C2D1:
+}
+
+a:hover {
+    /* Typeography*/
+    color: #FFA94D;
+}
+
+a:active {
+    /* Typeography*/
+    color: #3DFFFC;
+}
