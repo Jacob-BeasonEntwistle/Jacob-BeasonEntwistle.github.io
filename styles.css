@@ -52,6 +52,37 @@ h3 {
 
 
 /* ====== Reusable Components ======*/
+.navigation-bar {
+    background-color: #1E1E24;
+    margin-top: 10px;
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+.navigation-bar a {
+    /* Box model */
+    float: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 15px 32px;
+    
+    /* Border */
+    border: none;
+    border-radius: 8px;
+
+    /* Background */
+    background-color: orange;
+    
+    /* Typography */
+    color: black;
+    
+    /* Effects & other */
+    text-decoration: none;
+    cursor: pointer;
+}
+
 footer {
     /* Box model */
     width: 100%;
@@ -59,6 +90,11 @@ footer {
     
     /* Background */
     background-color: #1E1E24;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 /* ====== Layout Containers ======*/
