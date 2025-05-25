@@ -15,6 +15,20 @@ body {
     color: #F4F4F5;
 }
 
+@media (min-width: 768px) {
+    body {
+        font-size: 18px; /* your original size */
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+}
+
 /* [Link Styles] */
 a:link {
     /* Typography*/
@@ -52,7 +66,13 @@ h3 {
 
 .viewport-text {
     /* Typography */
-    font-size: 1.5vw;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .viewport-text {
+        font-size: 1.5vw;
+    }
 }
 
 
