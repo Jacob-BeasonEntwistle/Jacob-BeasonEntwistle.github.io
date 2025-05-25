@@ -1,4 +1,8 @@
 /* ====== Normalized ======*/
+* {
+    box-sizing: border-box;
+}
+
 body {
     /* Box model */
     margin: 0px;
@@ -46,27 +50,36 @@ h3 {
     font-size: 25px;
 }
 
-.para {
-    font-size: 20px;
+.viewport-text {
+    /* Typography */
+    font-size: 1.5vw;
 }
 
 
 /* ====== Reusable Components ======*/
 .navigation-bar {
+    /* Box model */
+    display: flex;
+    max-width: 35%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    
+    /* Border */
+    border-radius: 20px;
+    
+    /* Background */
     background-color: #1E1E24;
-    margin-top: 10px;
-    margin-left: 32%;
-    margin-right: 32%;
+    
+    /* Effects & other */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .navigation-bar a {
     /* Box model */
-    float: center;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    padding: 15px 32px;
+    margin: 0.5rem;
+    padding: 1rem 1.8rem;
     
     /* Border */
     border: none;
@@ -76,11 +89,22 @@ h3 {
     background-color: orange;
     
     /* Typography */
+    font-size: 1rem;
     color: black;
     
     /* Effects & other */
+    white-space: nowrap; /* Keeps buttons on a single line */
+    transition: background-color 0.3s ease;
     text-decoration: none;
     cursor: pointer;
+}
+
+.navigation-bar a:hover {
+    background-color: darkorange;
+}
+
+.navigation-bar a:active {
+    background-color: aquamarine;
 }
 
 footer {
@@ -110,7 +134,7 @@ footer {
     border-radius: 30px 30px 30px 30px;
     
     /* Background */
-    background-color: #1E1E24
+    background-color: #1E1E24;
 }
 
 .skills-container {
@@ -126,28 +150,32 @@ footer {
     background-color: #1E1E24
 }
 
-.column {
-    /* Box model */
-    float: left;
-    width: 47%;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
-.skills-column {
+.column, skills-column {
     /* Box model */
-    float: left;
-    width: 30%;
+    flex: 1 1 100%;
 }
 
-.row:after {
-    /* Box model */
-    content: "";
-    display: table;
-    clear: both;
+@media (min-width: 768px) {
+    .column {
+        flex: 1 1 47%;
+    }
+    
+    .skills-column {
+        flex: 1 1 30%;
+    }
 }
 
 /* ====== Specific sections/pages ======*/
 .header {
     /* Box model */
+    margin-top: 1%;
     margin-left: 20%;
 	margin-right: 20%;
 	padding: 2px;
@@ -164,6 +192,6 @@ footer {
 	text-align: center;
 	color: white;
 	
-	/* Effects */
+	/* Effects & other */
 	text-shadow: 2px 2px 5px #FF8800;
 }
