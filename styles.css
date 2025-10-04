@@ -29,6 +29,23 @@ a:active {
     color: #3DFFFC;
 }
 
+.project-link {
+  display: block;
+  text-decoration: none;
+}
+
+.project-link img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-link img:hover {
+  transform: scale(0.95);
+}
+
+
 /* ====== [Icons] ====== */
 .fa {
     padding: 0.5em;
